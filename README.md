@@ -96,7 +96,7 @@ You may find [this example](#correct-usage-of-the-types-parameter) helpful.
 
 #### fields
 Type: `Array`
-Default: `['address_components', 'adr_address', 'alt_id', 'formatted_address', 'geometry', 'icon', 'id', 'name', 'permanently_closed', 'photo', 'place_id', 'scope', 'type', 'url', 'utc_offset', 'vicinity']`
+Default: `['address_components', 'adr_address', 'alt_id', 'formatted_address', 'geometry', 'icon', 'id', 'name', 'business_status', 'photo', 'place_id', 'scope', 'type', 'url', 'utc_offset', 'vicinity']`
 
 Set which data fields to return in the PlaceResult from the Google Autocomplete API when the user selects a place. [Google Autocomplete API by default returns all available data fields](https://developers.google.com/maps/documentation/javascript/places-autocomplete#get_place_information) for the selected place, which may result in additional charges and thus the API users might pay for data they don't need. This package sets a sensible default for the fields value, fetching only the Basic Data fields which do not result in any additional charges. If you want to fetch other fields in addition to the default ones, make sure that the array you pass in to the `fields` prop contains the default fields listed above, and not only the additional fields you want to fetch.
 
