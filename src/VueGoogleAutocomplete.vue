@@ -40,7 +40,7 @@
     */
     const BASIC_DATA_FIELDS = ['address_components', 'adr_address', 'alt_id',
         'formatted_address', 'geometry', 'icon', 'id', 'name',
-        'permanently_closed', 'photo', 'place_id', 'scope', 'type', 'url', 'vicinity'];
+        'business_status', 'photo', 'place_id', 'scope', 'type', 'url', 'vicinity'];
 
     export default {
         name: 'VueGoogleAutocomplete',
